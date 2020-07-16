@@ -1,11 +1,11 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
+#define rep(i, n) for (int i = 0 ; i < (int)(n) ; ++i)
+
 bool check(vector<int> vec) {
-  for (int i = 0, l = vec.size() ; i < l ; ++i) {
+  rep (i, vec.size()) {
     if (vec[i] % 2 != 0) return false;
   }
 
@@ -20,15 +20,15 @@ int main() {
   cin >> N;
 
   vector<int> vec(N);
-  for (int i = 0 ; i < N ; ++i) {
+  rep (i, N) {
     cin >> vec.at(i);
   }
 
   int result = 0;
-  
+
   while (check(vec)) {
     ++result;
-    for (int i = 0, l = vec.size() ; i < l ; ++i) {
+    rep (i, vec.size()) {
       vec[i] = vec[i] / 2;
     }
   }

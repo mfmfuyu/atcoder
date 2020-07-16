@@ -1,7 +1,8 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
+
+#define rep(i, n) for (int i = 0 ; i < (int)(n) ; ++i)
 
 int main() {
   cin.tie(0);
@@ -12,7 +13,7 @@ int main() {
 
   int result = 0;
 
-  for (int i = 0, l = s.size() ; i < l ; ++i) {
+  rep (i, s.size()) {
     if (s[i] == '1') ++result;
   }
 

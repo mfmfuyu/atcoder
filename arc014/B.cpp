@@ -12,7 +12,7 @@ int main() {
   cin >> N;
 
   queue<string> q;
-  rep(i, N) {
+  rep (i, N) {
     string str;
     cin >> str;
 

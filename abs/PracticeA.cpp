@@ -1,7 +1,8 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
+
+#define rep(i, n) for (int i = 0 ; i < (int)(n) ; ++i)
 
 int main() {
   cin.tie(0);
@@ -14,8 +15,7 @@ int main() {
   cin >> b >> c;
   cin >> s;
 
-  cout << (a + b + c) << endl;
-  cout << s << endl;
+  cout << (a + b + c) << ' ' << s << '\n';
 
   return 0;
 }

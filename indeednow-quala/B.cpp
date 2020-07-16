@@ -11,7 +11,7 @@ map<char, int> toMap(string str) {
   map<char, int> result;
 
   int size = str.size();
-  rep(i, size) {
+  rep (i, size) {
     if (result.find(str[i]) == result.end()) {
       result[str[i]] = 1;
     } else {
@@ -42,7 +42,7 @@ int main() {
   int N;
   cin >> N;
 
-  rep(i, N) {
+  rep (i, N) {
     string str;
     cin >> str;
 

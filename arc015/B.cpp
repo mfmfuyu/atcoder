@@ -20,7 +20,7 @@ int main() {
   int r5 = 0;
   int r6 = 0;
 
-  rep(i, N) {
+  rep (i, N) {
       double MT, mT;
       cin >> MT >> mT;
 
