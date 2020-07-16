@@ -22,7 +22,7 @@ int main() {
 
   rep(i, N) {
       double MT, mT;
-      cin >> MT >> mT;      
+      cin >> MT >> mT;
 
       if (MT >= 35) {
           ++r1;
@@ -46,4 +46,6 @@ int main() {
   }
 
   cout << r1 << ' ' << r2 << ' ' << r3 << ' ' << r4 << ' ' << r5 << ' ' << r6 << '\n';
+
+  return 0;
 }
