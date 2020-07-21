@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+
+#define rep(i, n) for (int i = 0 ; i < (int)(n) ; ++i)
+#define rep2(i, n, a) for (int i = a ; i < (int)(n) ; ++i)
+
+#define per(i, n) for (int i = n ; i >= 0 ; --i)
+
+int main() {
+  cin.tie(0);
+  ios::sync_with_stdio(false);
+
+  ll a, b, c;
+  cin >> a >> b >> c;
+
+  ll result = a % 1000000007;
+  result = (result * b) % 1000000007;
+  result = (result * c) % 1000000007;
+
+  cout << result << '\n';
+
+  return 0;
+}
